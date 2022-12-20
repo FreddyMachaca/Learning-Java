@@ -1,26 +1,59 @@
 package poo.clases;
 
+import poo.herencia.Camion;
+import poo.herencia.Coche;
+import poo.herencia.Motocicleta;
+
 public class Main {
     public static void main(String[] args) {
 
         // 1. Crear un objeto de la clase Vehículo
-        Vehiculo v1 = new Vehiculo();
-        System.out.println("v1.fabricante = " + v1.fabricante);
-        System.out.println("v1.modelo = " + v1.modelo);
-        System.out.println("v1.dd = " + v1.dd);
-        System.out.println("v1.year = " + v1.year);
-        System.out.println("v1.sport = " + v1.sport);
-
-        // 2. Crear un objeto de la clase Vehículo
-        Vehiculo v2 = new Vehiculo("Ferrari", "F40", 4.0, 1990, true);
-        System.out.println("\nv2.fabricante = " + v2.fabricante);
-        System.out.println("v2.modelo = " + v2.modelo);
-        System.out.println("v2.dd = " + v2.dd);
-        System.out.println("v2.year = " + v2.year);
-        System.out.println("v2.sport = " + v2.sport);
+        Vehiculo toyotaPrius = new Vehiculo();
+        System.out.println("toyotaPrius.fabricante = " + toyotaPrius.fabricante);
+        System.out.println("toyotaPrius.modelo = " + toyotaPrius.modelo);
+        System.out.println("toyotaPrius.dd = " + toyotaPrius.dd);
+        System.out.println("toyotaPrius.year = " + toyotaPrius.year);
+        System.out.println("toyotaPrius.sport = " + toyotaPrius.sport);
 
 
+        //creando motor para el vehículo
+        Motor motorGTI = new Motor("V8", 500, 500, 8);
 
+
+        // creando un objeto de la clase Vehículo
+        Vehiculo fordMondeo = new Vehiculo("Ferrari", "F40", 4.0, 1990, true, 0, motorGTI);
+        System.out.println("\nfordMondeo.fabricante = " + fordMondeo.fabricante);
+        System.out.println("fordMondeo.modelo = " + fordMondeo.modelo);
+        System.out.println("fordMondeo.dd = " + fordMondeo.dd);
+        System.out.println("fordMondeo.year = " + fordMondeo.year);
+        System.out.println("fordMondeo.sport = " + fordMondeo.sport);
+
+        fordMondeo.acelerar(300);
+        System.out.println("velocidad = " + fordMondeo.speed);
+        System.out.println("\nDATOS DE MOTOR");
+        System.out.println("motor = " + fordMondeo.motor.modelo);
+        System.out.println("motor = " + fordMondeo.motor.caballos);
+        System.out.println("motor = " + fordMondeo.motor.parNm);
+        System.out.println("motor = " + fordMondeo.motor.numCilindros);
+
+        //herencia
+        Motocicleta kawasakiNinja = new Motocicleta();
+        kawasakiNinja.fabricante = "Kawasaki";
+
+        //polimorfismo
+        //puede tener muchas formas
+        Vehiculo vehiculo;
+
+
+        vehiculo = new Motocicleta();
+        vehiculo.acelerar(100);
+
+        vehiculo = new Coche();
+        vehiculo.acelerar(100);
+
+        vehiculo = new Camion();
+        vehiculo.acelerar(100);
 
     }
+
 }
