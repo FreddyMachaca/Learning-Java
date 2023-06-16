@@ -1,6 +1,10 @@
 import java.util.Arrays;
 
 public class InvertirNumerosPares {
+    /* EJERCICIO 9:
+    Dado un vector X, invertir los números pares:
+    105 604 27 56 36 → 105 406 27 65 63
+    */
     public static void main(String[] args) {
         int[] vectorX = {105, 604, 27, 56, 36};
         int[] vectorInvertido = invertirPares(vectorX);

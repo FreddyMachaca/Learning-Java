@@ -2,6 +2,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class InvertirNumerosParesScanner {
+    /* EJERCICIO 9:
+    Dado un vector X, invertir los números pares:
+    105 604 27 56 36 → 105 406 27 65 63
+    USANDO SCANNER
+    */
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
 
