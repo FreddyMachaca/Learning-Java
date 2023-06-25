@@ -16,6 +16,3 @@ Esta carpeta contiene proyectos relacionados con estructuras de datos en Java.
 
 ### `Java 2D`
 Proyectos que implican gráficos en Java se encuentran aquí.
-
-### `INF-111`
-Aquí se almacenan el solucionario de ejercicios de la materia de la materia "INF-111 INTRODUCCIÓN A LA INFORMATICA".
