@@ -4,15 +4,4 @@
 
 # Learning-Java
 
-Este repositorio contiene mis ejercicios mientras aprendo Java.
-
-## Estructura del Repositorio
-
-### `Conceptos Basicos`
-Aquí se encuentran los proyectos y ejercicios que cubren los conceptos básicos de Java.
-
-### `Estrutura De Datos`
-Esta carpeta contiene proyectos relacionados con estructuras de datos en Java.
-
-### `Java 2D`
-Proyectos que implican gráficos en Java se encuentran aquí.
+Este repositorio contiene ejercicios de java que he realizado en mi proceso de aprendizaje de este lenguaje de programación.
